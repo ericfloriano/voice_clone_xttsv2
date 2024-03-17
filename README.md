@@ -1,3 +1,3 @@
 - try code for voice clone AI
-- Using model: xtts
+- using model: xtts
 - sample code by SauloCatarino
