@@ -1,0 +1,24 @@
+import locale
+locale.getpreferredencoding = lambda: "UTF-8"
+
+wget "<file/path file/URL>" -O <fileName.extension>
+
+ffmpeg -i <fileName.extension> <convertedFileName.extension>
+pip install TTS
+
+import torch
+from TTS.api import TTS
+import time
+from IPython.display import Audio, display
+tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to('cuda')
+
+texto = """
+bla bla bla
+"""
+start = time.time()
+res = tts.tts_to_file(text=texto, speaker_wav="convertedFileName.extension", language= 'pt', emotion="Happy", speed=2.5, file_path="out.wav")
+print(res)
+tempo = time.time() - start
+print(f"Tempo total: {tempo}")
+
+display(Audio('out.wav', autoplay=True))
