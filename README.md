@@ -53,6 +53,6 @@
 - _Make sure to replace the placeholders in the code with your specific values._
 - _Adjust the parameters of tts_to_file() as desired._
 - _This code is a basic example and can be modified for further customization._
-- _THANKS for the class **SauloCatarino**_
+- _THANKS for the class **SauloCatharino**_
 
 ==========
